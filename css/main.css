@@ -1,0 +1,9 @@
+.main-text {
+  color: red;
+}
+#text1 {
+  color: blue;
+}
+div p b, div i   {color: green;}
+
+/* div, .name-class, #id, div p {color: red;} */
