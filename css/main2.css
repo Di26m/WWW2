@@ -1,8 +1,21 @@
+p.text:not(:empty) {
+  color: green;
+}
+
+p.text:not(:empty)::after {
+  content: 'some';
+  color: green;
+}
+#some_id::after {
+  content: '123';
+  color: orange;
+  text-decoration: line-through;
+}
 .main_link {
   color: red;
   text-decoration: none;
 }
-
+/* line-through; зачеркнутый текст */
 .main_link:hover {
   color: blue;
   text-decoration: underline;
@@ -15,6 +28,9 @@
 }
 
 .main_link:visited {
-  text-decoration: line-through;
-  color: grey;
+    color: grey;
 }
+
+input:required {}
+input {color: blue;}
+input:focus {color: red}
