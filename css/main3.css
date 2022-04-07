@@ -1,0 +1,17 @@
+#first {
+  /* background-color: #b2d3f7;
+  color:#1e262e;
+  background-image: url('https://kartinkin.net/uploads/posts/2021-07/thumbs/1625686421_9-kartinkin-com-p-kosmicheskaya-bitva-art-art-krasivo-9.jpg');
+  background-repeat: no-repeat;
+  background-position: center; */
+
+  color:#1e262e;
+  background: #b2d3f7 url('https://kartinkin.net/uploads/posts/2021-07/thumbs/1625686421_9-kartinkin-com-p-kosmicheskaya-bitva-art-art-krasivo-9.jpg') no-repeat top;
+  height: 500px;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+#second {
+  height: 2000px;
+}

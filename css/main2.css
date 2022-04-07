@@ -1,16 +1,36 @@
+body {
+  background-color: #b2d3f7;
+  color:#1e262e;
+   
+}
+
+
+
+
+
 p.text:not(:empty) {
   color: green;
 }
 
-p.text:not(:empty)::after {
-  content: 'some';
+p.text:empty::after {
+  content: attr(title);
   color: green;
 }
-#some_id::after {
+
+p:last-of-type {
+  text-decoration: line-through;
+}
+
+#some_id::before {
   content: '123';
   color: orange;
   text-decoration: line-through;
 }
+
+p.main_link::first-line {
+  color: green;
+}
+
 .main_link {
   color: red;
   text-decoration: none;
