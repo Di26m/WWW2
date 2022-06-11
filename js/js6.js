@@ -1,7 +1,11 @@
 var number = 15;
 var isHasHouse = true;
-
+// if (number == 15 && isHasHouse) - тоже самое if (number == 15 && isHasHouse == true )
+// if (number == 15 && !isHasHouse) - тоже самое if (number == 15 && isHasHouse == false )
+// && - и
+// || - или
 if (number == 15 && isHasHouse == true ) {
+  // if (number == 15 && isHasHouse)
   console.log("Ok");
   console.log("Ok!");
 } else if (number < 10) {
