@@ -7,7 +7,8 @@
   <title>JS urok 12.2</title>
 </head>
 <body>
-    <form id="main-form" onsubmit="checkForm(this)" >
+    <form id="main-form"  method="post">
+    <!-- <form id="main-form" onsubmit="return checkForm(this)" method="post"> -->
       <label for="name">Имя</label>
       <input type="text" name="name" placeholder="Имя" id="name"><br><br>
       <label for="password">Пароль:</label>
@@ -19,9 +20,10 @@
       <label for="male">Мужской</label>
       <input type="radio" name="state" id = "female" value="Женский">
       <label for="femaie">Женский</label><br><br>
-      <input type="button" name = "submit" value="Готово">
+      <div id = "error" style="color: red"></div>
+      <input type="submit" name="submit" value="Готово">
     </form>
 
-  <script src="js/js12.js">  </script>
+  <script src="js/js12.2.js">  </script>
 </body>
 </html>
