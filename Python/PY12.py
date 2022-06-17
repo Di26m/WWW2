@@ -23,7 +23,7 @@
 nums1 = [5, 7, 2, 9, 4, -10]
 # min1 = minimal(nums1)
 #
-nums2 = [5, 7, 2.1, 9.4, 4, -4, ]
+nums2 = [-555, 7, 2.1, 9.4, 4, -4, 180 ]
 # min2 = minimal(nums2)
 #
 # if min1 < min2:

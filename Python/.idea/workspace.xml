@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e706e205-b0cb-4bd7-aabc-a18bc0ee3b5a" name="Changes" comment="15.16.2022">
-      <change afterPath="$PROJECT_DIR$/PY10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PY11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PY12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PY7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PY8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PY9.py" afterDir="false" />
+    <list default="true" id="e706e205-b0cb-4bd7-aabc-a18bc0ee3b5a" name="Changes" comment="15.16.2022 2">
+      <change afterPath="$PROJECT_DIR$/PY13.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PY14.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PY15.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PY16.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PY17.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/text2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mymodule.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PY1.py" beforeDir="false" afterPath="$PROJECT_DIR$/PY1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PY12.py" beforeDir="false" afterPath="$PROJECT_DIR$/PY12.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Дмитрий/Desktop/WWW2/Python/PY12.py"
+    "last_opened_file_path": "C:/Users/Дмитрий/Desktop/WWW2/Python/PY17.py"
   }
 }]]></component>
   <component name="RunManager">
@@ -57,7 +59,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY12.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY17.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655215701513</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="15.16.2022 2">
+      <created>1655293256949</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655293256949</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,7 +108,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="15.16.2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="15.16.2022" />
+    <MESSAGE value="15.16.2022 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="15.16.2022 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
