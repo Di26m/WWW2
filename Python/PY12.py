@@ -13,13 +13,13 @@
 # print(res)
 # print(summa('H', 'i'))
 # -----------------------функция выбора минимального числа из 2 х массивов(списков)
-# def minimal(l):
-#     min_num = l[0]
-#     for el in l:
-#         if el < min_num:
-#             min_num = el
-#     return min_num
-#
+def minimal(l):
+    min_num = l[0]
+    for el in l:
+        if el < min_num:
+            min_num = el
+    return min_num
+
 nums1 = [5, 7, 2, 9, 4, -10]
 # min1 = minimal(nums1)
 #
