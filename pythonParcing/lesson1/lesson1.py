@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 # pip install beautifulsoup4 lxml
+import re
+
 from bs4 import BeautifulSoup
 
 with open ('blank/index.html','r', encoding= 'utf-8') as file:
@@ -60,4 +62,34 @@ soup = BeautifulSoup(src, "lxml")
 # post_divs = soup.find(class_="post__text").find_parents()
 # print(post_divs)
 
+#--------.next_element .previous_element------
+# next_el = soup.find(class_="post__title").next_element.next_element.text
+# print(next_el)
 #
+# next_el = soup.find(class_="post__title").find_next().text
+# print(next_el)
+# ---------.find_next_sibling() .find_previous_sibling()------
+# next_sib = soup.find(class_="post__title").find_next_sibling()
+# print(next_sib)
+
+# rev_sib = soup.find(class_="post__date").find_previous_sibling()
+# print(rev_sib)
+
+links = soup.find(class_="some__liks").find_all("a")
+# print(links)
+# for link in links:
+#     link_href_attr =link.get("href")
+#     link_href_attr1 = link['href']
+#     link_data_attr = link.get("data-attr")
+#     link_data_attr1 = link['data-attr']
+#     print(link_href_attr1)
+#     print(link_data_attr1)
+
+# find_a_by_text = soup.find("a",text="Одежда для взрослых")
+# print(find_a_by_text)
+
+# find_a_by_text = soup.find("a", text=re.compile("Одежда"))
+# print(find_a_by_text)
+
+find_all_clothes = soup.find_all(text=re.compile("([Оо])дежда"))
+print(find_all_clothes)
