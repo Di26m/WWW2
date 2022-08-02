@@ -17,10 +17,17 @@ def Fb2_to_mp3(file_path=input("ВВедите путь")):
     for file_path in glob.glob("*.fb2"):
 
         if Path(file_path).is_file() and Path(file_path).suffix == '.fb2':
-            return pypandoc.convert_file(f'{file_path}', 'context', outputfile=f"{file_path}.txt")
+            pypandoc.convert_file(f'{file_path}', 'context', outputfile=f"{file_path}.txt")
 
 
-        # with open(file=file_path, mode='r+', encoding='utf-8' ) as result:
+        with open(f'{file_path}.txt', mode='r+', encoding='utf-8' ) as f:
+            content = f.read()
+            # file_content =re.sub(r"[\/|,|\[|\], \\,\{,\},\-,\~]", "", content)
+            file_content = re.sub(r"[\/|,|\[|\],\\,\{,\},\-,\~,\=,A-z,]", "", content).replace("\n", " ")
+            print(file_content)
+
+        with open(f'{file_path}.txt', 'w', encoding='utf-8') as f:
+            f.write(file_content)
 
     else:
         return "bad"
