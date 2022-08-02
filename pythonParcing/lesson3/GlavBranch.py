@@ -5,7 +5,7 @@ import lxml
 from gtts import gTTS
 import re
 
-# result = pypandoc.convert_file('Ataman.fb2', 'context', outputfile="Ataman.txt")
+result = pypandoc.convert_file('Ataman.fb2', 'context', outputfile="Ataman.txt")
 
 # result = pypandoc.convert_file('Ataman.html', 'context', outputfile="Ataman2.txt")
 # result = pypandoc.convert_file('Ataman.fb2', 'html', outputfile="Ataman.html")

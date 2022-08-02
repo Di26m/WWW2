@@ -1,20 +1,29 @@
 import os
 import pypandoc
 from pathlib import Path
-
+import  pathlib
+import glob
 from gtts import gTTS
 import re
-def Fb2_to_mp3(file_path="test.fb2"):
+# def Fb2_to_mp3(file_path="test.fb2"):
+def Fb2_to_mp3(file_path=glob.glob(fileExt)):
+    file_dir = input('Введите путь к папке:')
+    fileExt = r"*.fb2"
+    list(pathlib.Path(file_dir).glob(fileExt))
+    file_path = [str(_) for _ in pathlib.Path(file_dir).glob(fileExt)]
+
+
+    print(file_path)
     if Path(file_path).is_file() and Path(file_path).suffix == '.fb2':
-        # return "Good"
-        file_name = Path(file_path).stem
+        return "Good"
+        # file_name = Path(file_path).stem
 
 
         # with pypandoc.convert_file(open(file=f'{file_path}', mode="r+"), 'context', outputfile=f'{file_name}.txt') as fb2:
-            content = fb2.read()
-
-            file_content = re.sub(r"[\/|,|\[|\],\\,\{,\},\-,\~,\=,A-z,]", "", content).replace("\n", " ")
-            fb2.write(file_content)
+        #     content = fb2.read()
+        #
+        #     file_content = re.sub(r"[\/|,|\[|\],\\,\{,\},\-,\~,\=,A-z,]", "", content).replace("\n", " ")
+        #     fb2.write(file_content)
 
 
 # result = pypandoc.convert_file('Ataman.fb2', 'context', outputfile="Ataman.txt")
@@ -37,6 +46,9 @@ def Fb2_to_mp3(file_path="test.fb2"):
 
     else:
         return "File is not FB2"
+
+# def main():
+#     print(Fb2_to_mp3(file_path='Ataman.fb2'))
 
 def main():
     print(Fb2_to_mp3(file_path='Ataman.fb2'))
