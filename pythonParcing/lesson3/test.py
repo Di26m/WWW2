@@ -12,7 +12,7 @@ import re
 #         if file.endswith(".fb2"):
 #             file_path = os.path.join(root, file)
 #             print(os.path.join(root, file))
-def Fb2_to_mp3(file_path=input("ВВедите путь")):
+def Fb2_to_mp3(file_path=input("ВВедите путь"), language='ru'):
     os.chdir(file_path)
     for file_path in glob.glob("*.fb2"):
 
@@ -24,8 +24,13 @@ def Fb2_to_mp3(file_path=input("ВВедите путь")):
             content = f.read()
             # file_content =re.sub(r"[\/|,|\[|\], \\,\{,\},\-,\~]", "", content)
             file_content = re.sub(r"[\/|,|\[|\],\\,\{,\},\-,\~,\=,A-z,]", "", content).replace("\n", " ")
-            print(file_content)
+            # print(file_content)
 
+        my_audio =gTTS(text=file_content, lang=language, slow=False)
+        file_name = Path(file_path).stem
+        my_audio.save(f'{file_name}.mp3')
+
+        return f'[+] {file_name}.mp3 создан успешно!'
         with open(f'{file_path}.txt', 'w', encoding='utf-8') as f:
             f.write(file_content)
 
