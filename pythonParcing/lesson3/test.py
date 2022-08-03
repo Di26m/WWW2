@@ -26,11 +26,11 @@ def Fb2_to_mp3(file_path=input("ВВедите путь"), language='ru'):
             file_content = re.sub(r"[\/|,|\[|\],\\,\{,\},\-,\~,\=,A-z,]", "", content).replace("\n", " ")
             # print(file_content)
 
-        my_audio =gTTS(text=file_content, lang=language, slow=False)
-        file_name = Path(file_path).stem
-        my_audio.save(f'{file_name}.mp3')
-
-        return f'[+] {file_name}.mp3 создан успешно!'
+        # my_audio =gTTS(text=file_content, lang=language, slow=False)
+        # file_name = Path(file_path).stem
+        # my_audio.save(f'{file_name}.mp3')
+        #
+        # return f'[+] {file_name}.mp3 создан успешно!'
         with open(f'{file_path}.txt', 'w', encoding='utf-8') as f:
             f.write(file_content)
 
