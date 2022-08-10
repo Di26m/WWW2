@@ -17,7 +17,7 @@ def fb2_to_mp3(file_path=input("ВВедите путь"), language='ru'):
         with open(f'{file_path}.txt', mode='r+', encoding='utf-8') as f:
             content = f.read()
 
-            file_content = re.sub(r"[\/|,|\[|\],\\,\{,\},\-,\~,\=,A-z,]", "", content).replace("\n", " ")
+            file_content = re.sub(r"[\/|,|\[|\],\\,\{,\},\-,\~,\=,A-z,]", "", content)
             # print(file_content)
 
         with open(f'{file_path}.txt', 'w', encoding='utf-8') as f:
