@@ -29,7 +29,6 @@ def fb2_to_mp3(file_path=input("ВВедите путь"), language='ru'):
 
         return f'[+] {file_name}.mp3 создан успешно!'
 
-
     else:
         return "bad"
 
